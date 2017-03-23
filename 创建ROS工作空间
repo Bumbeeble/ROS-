@@ -1,0 +1,21 @@
+创建ROS工作空间
+
+$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/src
+
+  mkdir 选项-p的意思是如果有需要则建立相应的父目录
+  
+$ cd ~/catkin_ws/
+$ catkin_make
+
+catkin_make之后会出现build和devel两个文件夹
+Inside the 'devel' folder you can see that there are now several setup.*sh files. Sourcing any of these files will overlay this workspace on top of your environment.
+Sourcing any of these files will overlay this workspace on top of your environment. 
+
+$ source devel/setup.bash
+将当前工作空间的目录写入环境变量ROS_PACKAGE_PATH
+$ echo $ROS_PACKAGE_PATH
+检查环境变量时候已经写入
+输出结果如下：
+/home/bumbeeble/catkin_ws/src:/opt/ros/kinetic/share
+这样工作空间就创建好了。
