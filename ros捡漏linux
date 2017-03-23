@@ -1,0 +1,7 @@
+~/.bashrc
+~/bashrc:为每一个运行bash shell的用户执行此文件.当bash shell被打开时,该文件被读取。
+每当一个命令行窗口（bash shell）被打开，~/.bashrc中的内容就会被运行。
+
+.bashrc is a shell script that Bash runs whenever it is started interactively. You can put any command in that file that you could type at the command prompt.
+You put commands here to set up the shell for use in your particular environment, or to customize things to your preferences. A common thing to put in .bashrc are aliases that you want to always be available.
+.bashrc runs on every interactive shell launch.
